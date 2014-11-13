@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Freeze Frame</title>
+
+<script>
+window.onblur = window.focus;
+window.onunload = window.onblur;
+window.onbeforeunload = window.focus;
+
+</script>
+
+</head>
+<body>
+
+<p>Don't even try clicking on the address bar</p>
+
+</body>
+</html>

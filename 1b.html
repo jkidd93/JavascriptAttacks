@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="openPopup()">Click here</button>
+
+<script>
+function openPopup()
+
+{
+
+	var popup, doc;
+	var i = 0;
+
+	while(1)
+	{
+		i++;
+		popup = window.open('new window', "Popup Window" + i,"height=400,width=400");
+		doc = popup.document;
+		doc.open();
+		doc.writeln("<html>");
+		doc.writeln("<h3>NEVERENDING POPUP!</h3>");
+		doc.write("<img src='/Users/jkidd47/Desktop/Project3/pikachu.png' alt='pikachu' title='Our Team' />")
+		doc.writeln("</body>");
+		doc.writeln("</html>");
+		doc.close();
+	}
+
+}
+</script>
+
+</body>
+</html>
